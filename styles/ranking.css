@@ -1,0 +1,119 @@
+
+.interface_liste_pays {
+    padding: 10px 100px 100px 100px;
+    background-image: radial-gradient(circle at 00% 150%, #515585, #072A52, transparent 80%),
+    radial-gradient(circle at 80% 80%, #072A52, transparent 50%);
+    background-attachment: fixed;
+    margin-top: 20vw;
+}
+
+/**************************** Table et filtres ****************************/
+
+.choix_table {
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.choix_table>a:hover {
+    background-color: #9146a2;
+}
+
+.filtres {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin: 20px 0px 20px 0px;
+}
+
+.button_filtres>input {
+    display: none;
+}
+
+.table-label {
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: #555;
+    transition: background-color 0.2s;
+    background-color: #562960;
+    padding: 10px 50px 10px 50px;
+    width: fit-content;
+    border-radius: 20px;
+    border: none;
+    color: #ececec;
+    cursor: pointer;
+}
+
+.bouton_active {
+    background-color: #9146a2;
+    pointer-events: none;
+}
+
+.table_donnees {
+    border: solid 2px #ececec;
+    box-shadow: 0px 0px 5px 0px #ececec;
+    width: fit-content;
+    align-content: center;
+    margin: 20px;
+    border-collapse: collapse;
+}
+
+.ranking_submit {
+    transition: 0.2s;
+    font-size: 10px;
+}
+
+.submit_hover:hover>.ranking_submit {
+    transform: translateY(-10px);
+    background-color: #9146a2;
+}
+/***************************** Tableau des données *****************************/
+
+.select_option {
+    margin: 15px;
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #9146a2;
+    color: #ececec;
+    border: none;
+    padding: 5px;
+}
+
+.select_option>option {
+    background-color: #9146a2;
+    box-shadow: 0px 0px 3px #555;
+}
+
+.table_objets {
+    background: linear-gradient(to right, rgba(237, 237, 237, 0.1),    /* Gauche - 50% opaque */ rgba(237, 237, 237, 0.3),      /* Centre - 100% opaque */ rgba(237, 237, 237, 0.1)     /* Droite - 50% opaque */);
+    padding: 5px 10px 5px 10px;
+    border-collapse: collapse;
+}
+
+h3 {
+    padding: 10px;
+}
+
+.table_infos {
+    padding: 3px 45px 0px 45px;
+}
+
+tr {
+    border: solid 2px #ececec;
+}
+
+th, td {
+    border: solid 1px #ececec;
+    padding: 5px 10px 5px 10px;
+    text-align: left;
+    vertical-align: middle; /* Aligne verticalement les données avec les titres des colonnes */
+}
+
+tr:nth-child(2n) { 
+    background-color: #FFFFFF15; /*Chaque ligne pair à un background différend pour mieux distinguer les lignes*/
+}
+
+.table_infos>td {
+    width: max-content;
+}

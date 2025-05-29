@@ -1,0 +1,87 @@
+body {
+    background: #090530;
+    margin: 0px;
+    font-family: "Striker";
+    color: #ececec;
+    font-size: 25px;
+}
+
+main {
+    margin: 20vw 25px 0px 25px;
+    animation: appear 0.4s ease-out forwards;
+}
+
+h3 {
+    background: #4CAF50;
+    padding: 12px;
+    border-radius: 50px;
+    width: fit-content;
+}
+
+/* En cas d'erreur sur le site */
+
+.erreur {
+    background-color: #7b2323;
+    padding: 12px;
+    border-radius: 50px;
+    width: fit-content;
+    align-items: center;
+    display: flex;
+    gap: 5px;
+}
+
+/**************** Formulaire ****************/
+
+.section_formulaire {
+    border: solid 2px #ececec;
+    border-radius: 20px;
+    width: fit-content;
+    padding: 20px;
+    margin-top: 2vw;
+    animation: appear 0.5s ease-out forwards;
+}
+
+.input_formulaire {
+    margin: 20px 0px 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    align-items: center;
+}
+
+.input_formulaire>input {
+   border: none;
+   padding: 10px;
+   border-radius: 15px;
+}
+
+.etoile {
+    color: rgb(194, 64, 41);
+    font-size: 20px;
+}
+
+.input_continent {
+    display: none;
+  }
+
+.input_continent + .label_continent {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #7b2323;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.input_continent:checked + .label_continent {
+    background-color: #4CAF50;
+    color: #ececec;
+    border-color: #4CAF50;
+}
+
+#europe:checked + .label_continent { background-color: #2ecc71; }
+#asie:checked + .label_continent { background-color: #2ecc71 }
+#amerique_du_nord:checked + .label_continent { background-color: #2ecc71; }
+#amerique_du_sud:checked + .label_continent { background-color: #2ecc71 }
+#afrique:checked + .label_continent { background-color: #2ecc71 }
+#oceanie:checked + .label_continent { background-color: #2ecc71 }
